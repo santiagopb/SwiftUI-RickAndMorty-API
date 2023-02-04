@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  RickAndMorty
+
+  Created by Santiago Pereira on 3/2/23.
+  
+*/
+
+"ApplicationTitle" = "The Rick and Morty App";
+"CharacterKnownLocation" = "Last known location:";
+"CharacterFirstSeen" = "First seen in:";
+"CharacterFilter" = "Filter characters";
+"CharacterName" = "Name";
+"CharacterStatus" = "Status";
+"CharacterSpecies" = "Species";
+"CharacterType" = "Type";
+"CharacterGender" = "Gender";
+"CharacterFilterApply" = "Apply filters";
+"CharacterFilterRemove" = "Remove filters";
+"none" = "All";
+"alive" = "Alive";
+"dead" = "Dead";
+"unknown" = "Unknown";
+"female" = "Female";
+"male" = "Male";
+"genderless" = "Genderless";
+"SearchNotFount" = "Search not found";
+

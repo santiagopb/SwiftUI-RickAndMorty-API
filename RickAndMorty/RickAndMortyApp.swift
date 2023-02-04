@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct RickAndMortyApp: App {
+    let dependencies = Dependencies()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CharacterListView()
         }
     }
 }
