@@ -12,3 +12,11 @@ target 'RickAndMorty' do
   pod 'lottie-ios'
   
 end
+
+
+target 'RickAndMorty_Tests' do
+  #inherit! :search
+  
+  pod 'Mocker'
+  
+end

@@ -11,10 +11,16 @@ import Kingfisher
 struct CharacterDetailView: View {
     
     @Environment(\.presentationMode) var presentationMode
-    @ObservedObject var vm =  CharacterDetailViewModel()
-    @State var showDetailInfo: Bool = true
+    @StateObject var vm: ViewModel
     var id: Int
     var title: String
+    @State var showDetailInfo: Bool = true
+    
+    init(id: Int, title: String) {
+        _vm = StateObject(wrappedValue: ViewModel())
+        self.id = id
+        self.title = title
+    }
     
     var body: some View {
         NavigationView {

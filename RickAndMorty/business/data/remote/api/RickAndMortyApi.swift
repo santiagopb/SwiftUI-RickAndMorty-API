@@ -7,7 +7,17 @@
 
 import Alamofire
 
-class RickAndMortyApi: ApiRestManager {
+protocol RickAndMortyApiProtocol {
+    func getCharacters(page: Int,
+                       name: String?,
+                       status: StatusEnum?,
+                       species: String?,
+                       type: String?,
+                       gender: GenderEnum?) -> DataRequest?
+    func getCharacter(id: Int) -> DataRequest?
+}
+
+class RickAndMortyApi: ApiRestManager, RickAndMortyApiProtocol {
     static let BASE_URL = "https://rickandmortyapi.com/api/"
     
     /// Obtiene listas de personajes de historietas con filtros opcionales

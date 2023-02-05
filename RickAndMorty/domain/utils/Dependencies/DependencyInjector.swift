@@ -10,9 +10,14 @@ import SwiftUI
 struct DependencyInjector {
     private static var dependencyList: [String: Any] = [:]
     
-    static func resolve<T>() -> T {
+    static func resolve<T>() -> T? {
         guard let t = dependencyList[String(describing: T.self)] as? T else {
-            fatalError("No provider register for type: \(T.self)")
+            if ProcessInfo.IS_UNIT_TESTING {
+                Log.verbose("No provider register for type: \(T.self)")
+            } else {
+                fatalError("No provider register for type: \(T.self)")
+            }
+            return nil
         }
         return t
     }
@@ -23,11 +28,11 @@ struct DependencyInjector {
 }
 
 @propertyWrapper struct Inject<T> {
-    var wrappedValue: T
+    var wrappedValue: T?
     
     init() {
         self.wrappedValue = DependencyInjector.resolve()
-        Log.verbose("Injected <- \(self.wrappedValue)")
+        Log.verbose("Injected <- \(String(describing: self.wrappedValue))")
     }
 }
 

@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct CharacterListView: View {
-    @StateObject var vm = CharacterListViewModel()
+    
+    @StateObject var vm: ViewModel
     @State var presentFilters: Bool = false
 
+    init() {
+        _vm = StateObject(wrappedValue: ViewModel())
+    }
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -77,9 +82,10 @@ struct CharacterListView: View {
     }
     
 }
-
+/*
 struct CharacterListView_Previews: PreviewProvider {
     static var previews: some View {
-        CharacterListView()
+        CharacterListView(viewModel: CharacterListViewModel())
     }
 }
+*/
