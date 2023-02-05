@@ -2,7 +2,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/14046000/216837163-a2f5c503-ba57-4733-a036-ff64fd946344.png" alt="Logo" width="80" height="80">
+  <img src="https://user-images.githubusercontent.com/14046000/216851670-0d9162e3-67c5-4376-9232-7fba33558ee0.png" alt="Logo" width="80" height="80">
 
   <h3 align="center">Rick and Morty APP</h3>
 
