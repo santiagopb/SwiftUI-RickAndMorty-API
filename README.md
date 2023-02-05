@@ -76,7 +76,7 @@ Para clonar y ejecutar esta aplicación, necesitarás Git, XCode y [CocoaPods](h
 <!-- CONTRIBUTING -->
 ## Contribuyendo
 
-Si tienes una sugerencia de mejoraría, haz una bifurcación del repositorio y crea una pull request. También puedes simplemente abrir un problema con la etiqueta "mejora".
+Si tienes una sugerencia de mejoraría, haz una bifurcación del repositorio y crea una pull request. También puedes simplemente reportar un problema con la etiqueta "mejora".
 
 1. Bifurcar el proyecto
 2. Crea tu rama de características (`git checkout -b feature/AmazingFeature`)
