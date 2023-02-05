@@ -8,6 +8,5 @@
 import Foundation
 
 class LottieFile {
-    static let NO_FOUND = "no_found"
     static let SEARCH_NOT_FOUND = "search-not-found"
 }

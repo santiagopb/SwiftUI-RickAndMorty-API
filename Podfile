@@ -15,8 +15,7 @@ end
 
 
 target 'RickAndMorty_Tests' do
-  #inherit! :search
-  
+  # Pods for RickAndMorty_Tests
   pod 'Mocker'
   
 end

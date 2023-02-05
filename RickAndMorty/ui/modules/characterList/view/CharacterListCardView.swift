@@ -69,6 +69,7 @@ struct CharacterListCardView: View {
     
 }
 
+#if DEBUG
 struct CharacterListCardView_Previews: PreviewProvider {
     static var previews: some View {
         CharacterListCardView(character: Character(id: 1,
@@ -85,3 +86,4 @@ struct CharacterListCardView_Previews: PreviewProvider {
                                                    created: "Created"))
     }
 }
+#endif

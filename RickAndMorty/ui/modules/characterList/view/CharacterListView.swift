@@ -82,10 +82,12 @@ struct CharacterListView: View {
     }
     
 }
-/*
+
+#if DEBUG
 struct CharacterListView_Previews: PreviewProvider {
     static var previews: some View {
-        CharacterListView(viewModel: CharacterListViewModel())
+        CharacterListView()
     }
 }
-*/
+#endif
+

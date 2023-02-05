@@ -90,7 +90,7 @@ struct CharacterDetailView: View {
                 .onTapGesture {
                     self.presentationMode.wrappedValue.dismiss()
                 }
-                                , trailing: Image(systemName: showDetailInfo ? "eye" : "eyebrow")
+                                , trailing: Image(systemName: showDetailInfo ? "eyebrow" : "eye")
                 .foregroundColor(Color.ui.Orange)
                 .onTapGesture {
                     self.showDetailInfo.toggle()
@@ -104,8 +104,10 @@ struct CharacterDetailView: View {
     }
 }
 
+#if DEBUG
 struct CharacterDetailView_Previews: PreviewProvider {
     static var previews: some View {
         CharacterDetailView(id: 1, title: "Titulo")
     }
 }
+#endif

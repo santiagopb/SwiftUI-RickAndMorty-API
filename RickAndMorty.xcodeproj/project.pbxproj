@@ -38,7 +38,6 @@
 		B59BEC48298EF320008DA563 /* CharacterLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59BEC47298EF320008DA563 /* CharacterLocation.swift */; };
 		B59BEC4A298F0306008DA563 /* StatusEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59BEC49298F0305008DA563 /* StatusEnum.swift */; };
 		B59BEC4C298F0322008DA563 /* GenderEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59BEC4B298F0322008DA563 /* GenderEnum.swift */; };
-		B59BEC50298F0961008DA563 /* no_found.json in Resources */ = {isa = PBXBuildFile; fileRef = B59BEC4F298F0961008DA563 /* no_found.json */; };
 		B59BEC52298F098D008DA563 /* LottieFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59BEC51298F098D008DA563 /* LottieFile.swift */; };
 		B59BEC54298F0A46008DA563 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59BEC53298F0A46008DA563 /* LottieView.swift */; };
 		B59BEC57298F0FC9008DA563 /* search-not-found.json in Resources */ = {isa = PBXBuildFile; fileRef = B59BEC56298F0FC9008DA563 /* search-not-found.json */; };
@@ -94,7 +93,6 @@
 		B59BEC47298EF320008DA563 /* CharacterLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterLocation.swift; sourceTree = "<group>"; };
 		B59BEC49298F0305008DA563 /* StatusEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusEnum.swift; sourceTree = "<group>"; };
 		B59BEC4B298F0322008DA563 /* GenderEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderEnum.swift; sourceTree = "<group>"; };
-		B59BEC4F298F0961008DA563 /* no_found.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = no_found.json; sourceTree = "<group>"; };
 		B59BEC51298F098D008DA563 /* LottieFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieFile.swift; sourceTree = "<group>"; };
 		B59BEC53298F0A46008DA563 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		B59BEC56298F0FC9008DA563 /* search-not-found.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "search-not-found.json"; sourceTree = "<group>"; };
@@ -337,7 +335,6 @@
 			isa = PBXGroup;
 			children = (
 				B59BEC56298F0FC9008DA563 /* search-not-found.json */,
-				B59BEC4F298F0961008DA563 /* no_found.json */,
 				B59BEC51298F098D008DA563 /* LottieFile.swift */,
 			);
 			path = lottie;
@@ -542,7 +539,6 @@
 			files = (
 				B59BEC57298F0FC9008DA563 /* search-not-found.json in Resources */,
 				B59EFCCD298D88DE00F5375E /* Preview Assets.xcassets in Resources */,
-				B59BEC50298F0961008DA563 /* no_found.json in Resources */,
 				B55A97FF298D9AA700C664EE /* Localizable.strings in Resources */,
 				B59EFCCA298D88DE00F5375E /* Assets.xcassets in Resources */,
 			);

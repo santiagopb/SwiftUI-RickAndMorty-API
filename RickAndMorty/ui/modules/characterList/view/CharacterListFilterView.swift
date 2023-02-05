@@ -98,6 +98,7 @@ struct CharacterListFilterView: View {
     }
 }
 
+#if DEBUG
 struct CharacterListFilterView_Previews: PreviewProvider {
     static var previews: some View {
         CharacterListFilterView(filterData: CharacterFilterData()) { filterData in
@@ -105,4 +106,4 @@ struct CharacterListFilterView_Previews: PreviewProvider {
         }
     }
 }
-
+#endif
