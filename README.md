@@ -91,7 +91,7 @@ Si tiene una sugerencia que mejoraría esto, haga una bifurcacion del repositori
 <!-- LICENSE -->
 ## Licencia
 
-Distribuido bajo la licencia MIT.
+Distribuido bajo la licencia MIT. Consulte `LICENSE.txt` para obtener más información.
 
 <p align="right">(<a href="#readme-top">volver arriba</a>)</p>
 
