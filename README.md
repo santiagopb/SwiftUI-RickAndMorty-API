@@ -31,12 +31,12 @@ Creada en XCode para iOS 15, utilizamos como fuente de información e inspiraci�
 Características:
 * Listado paginado de todos los personajes con un scroll infinito
 * Selector multiple que nos permite filtrar los datos
-* Pantalla de detalle con opcion que a ver la solo la imagen del personaje
+* Pantalla de detalle con opción a ver solo la imagen del personaje
 
 <br/>
 
 ### Construido con
-Desarrollada en XCode y SwiftUI, tambien hemos incluido algunas dependencias de terceros con CocoaPoods
+Desarrollada en XCode y SwiftUI, también hemos incluido algunas dependencias de terceros con CocoaPoods
 * ###### SwiftyBeaver
 * ###### Alamofire
 * ###### Kingfisher
@@ -48,7 +48,7 @@ Desarrollada en XCode y SwiftUI, tambien hemos incluido algunas dependencias de 
 
 <!-- GETTING STARTED -->
 ## Empezando
-Para clonar y ejecutar esta aplicación, necesitarás Git, XCode y [CocoaPods](https://cocoapods.org/) instalados en tu ordenador.
+Para clonar y ejecutar esta aplicación, necesitarás Git, XCode y [CocoaPods](https://cocoapods.org/) instalados en el ordenador.
 
 ### Instalacion
 
@@ -76,7 +76,7 @@ Para clonar y ejecutar esta aplicación, necesitarás Git, XCode y [CocoaPods](h
 <!-- CONTRIBUTING -->
 ## Contribuyendo
 
-Si tiene una sugerencia de mejoraría, haga una bifurcacion del repositorio y cree una pull request. También puede simplemente abrir un problema con la etiqueta "mejora".
+Si tienes una sugerencia de mejoraría, haz una bifurcación del repositorio y crea una pull request. También puedes simplemente abrir un problema con la etiqueta "mejora".
 
 1. Bifurcar el proyecto
 2. Crea tu rama de características (`git checkout -b feature/AmazingFeature`)
