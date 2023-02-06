@@ -72,18 +72,7 @@ struct CharacterListCardView: View {
 #if DEBUG
 struct CharacterListCardView_Previews: PreviewProvider {
     static var previews: some View {
-        CharacterListCardView(character: Character(id: 1,
-                                                   name: "Name",
-                                                   status: "Status",
-                                                   species: "Specie",
-                                                   type: "Type",
-                                                   gender: "Gender",
-                                                   origin: CharacterLocation(name: "Close Rick-counters of the Rick Kind", url: ""),
-                                                   location: CharacterLocation(name: "Citadel of Ricks", url: ""),
-                                                   image: "https://rickandmortyapi.com/api/character/avatar/21.jpeg",
-                                                   episode: ["Episode1"],
-                                                   url: "Url",
-                                                   created: "Created"))
+        CharacterListCardView(character: MockCharacter)
     }
 }
 #endif
