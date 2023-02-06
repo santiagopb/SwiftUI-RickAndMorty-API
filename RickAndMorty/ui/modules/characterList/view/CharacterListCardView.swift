@@ -59,7 +59,7 @@ struct CharacterListCardView: View {
             .background(Color.ui.Gray)
         }
         .fullScreenCover(isPresented: self.$presentCharacterDetail) {
-            CharacterDetailView(id: character.id, title: character.name)
+            CharacterDetailView(id: character.id)
         }
         .onTapGesture {
             self.presentCharacterDetail.toggle()

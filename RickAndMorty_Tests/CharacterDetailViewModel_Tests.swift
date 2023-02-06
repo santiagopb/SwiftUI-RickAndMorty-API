@@ -12,11 +12,10 @@ import Mocker
 class CharacterDetailViewModel_Tests: XCTestCase {
 
     var setup = MockDependencies()
-    var viewModel = CharacterDetailView.ViewModel()
+    var viewModel = CharacterDetailView.ViewModel(id: 1)
     
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        viewModel = CharacterDetailView.ViewModel()
     }
 
     override func tearDownWithError() throws {
@@ -29,6 +28,7 @@ class CharacterDetailViewModel_Tests: XCTestCase {
     
     func test_CharacterDetailViewModel_character_shouldReturnExpectedCharacter() {
         let id = 1
+        viewModel = CharacterDetailView.ViewModel(id: id)
         let apiEndpoint = URL(string: "https://api.mock.com/character/\(id)")!
         let expectedCharacter = MockGenerator.characterApiObject(id: id)
         let mockedData = try! JSONEncoder().encode(expectedCharacter)
@@ -36,7 +36,6 @@ class CharacterDetailViewModel_Tests: XCTestCase {
         mock.register()
 
         let exp = XCTestExpectation(description: "Should return expected character after a second.")
-        viewModel.viewIsReady(id: id)
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
             exp.fulfill()
         })
@@ -49,6 +48,7 @@ class CharacterDetailViewModel_Tests: XCTestCase {
     
     func test_CharacterDetailViewModel_character_shouldReturnNilWhenBuildWithoutId() {
         let id = 2
+        viewModel = CharacterDetailView.ViewModel(id: id)
         let apiEndpoint = URL(string: "https://api.mock.com/character/\(id)")!
         let expectedCharacter = MockGenerator.characterApiObject(id: nil)
         let mockedData = try! JSONEncoder().encode(expectedCharacter)
@@ -56,7 +56,6 @@ class CharacterDetailViewModel_Tests: XCTestCase {
         mock.register()
 
         let exp = XCTestExpectation(description: "Should return nil after a second.")
-        viewModel.viewIsReady(id: id)
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
             exp.fulfill()
         })
@@ -67,12 +66,12 @@ class CharacterDetailViewModel_Tests: XCTestCase {
     
     func test_CharacterDetailViewModel_character_shouldReturnNilWhenLoadFromServiceFail() {
         let id = 3
+        viewModel = CharacterDetailView.ViewModel(id: id)
         let apiEndpoint = URL(string: "https://api.mock.com/character/\(id)")!
         let mock = Mock(url: apiEndpoint, dataType: .json, statusCode: 404, data: [.get: Data()])
         mock.register()
 
         let exp = XCTestExpectation(description: "Should return nil after a second.")
-        viewModel.viewIsReady(id: id)
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
             exp.fulfill()
         })

@@ -13,7 +13,11 @@ extension CharacterDetailView {
         @Published var character: Character?
         @Inject var service: RickAndMortyApiProtocol?
 
-        func viewIsReady(id: Int) {
+        init(id: Int) {
+            getCharacter(id: id)
+        }
+        
+        func getCharacter(id: Int) {
             service?.getCharacter(id: id)?.responseDecodable(of: CharacterApiObject.self) { [weak self] response in
                 switch response.result {
                 case .success(let character):

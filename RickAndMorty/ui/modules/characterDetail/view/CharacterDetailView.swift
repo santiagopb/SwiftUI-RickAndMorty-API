@@ -12,14 +12,10 @@ struct CharacterDetailView: View {
     
     @Environment(\.presentationMode) var presentationMode
     @StateObject var vm: ViewModel
-    var id: Int
-    var title: String
     @State var showDetailInfo: Bool = true
     
-    init(id: Int, title: String) {
-        _vm = StateObject(wrappedValue: ViewModel())
-        self.id = id
-        self.title = title
+    init(id: Int) {
+        _vm = StateObject(wrappedValue: ViewModel(id: id))
     }
     
     var body: some View {
@@ -83,7 +79,7 @@ struct CharacterDetailView: View {
 
             }
             .ignoresSafeArea(.all, edges: [.bottom, .leading, .trailing] )
-            .navigationBarTitle(title, displayMode: .inline)
+            .navigationBarTitle(vm.character?.name ?? "", displayMode: .inline)
             .navigationBarItems(leading:
                                     Image(systemName: "chevron.left")
                 .foregroundColor(Color.ui.Orange)
@@ -98,16 +94,13 @@ struct CharacterDetailView: View {
             )
         }
         .statusBar(hidden: true)
-        .onAppear {
-            vm.viewIsReady(id: id)
-        }
     }
 }
 
 #if DEBUG
 struct CharacterDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        CharacterDetailView(id: 1, title: "Titulo")
+        CharacterDetailView(id: 1)
     }
 }
 #endif
