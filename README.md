@@ -40,7 +40,8 @@ Desarrollada en XCode y SwiftUI, también hemos incluido algunas dependencias de
 * ###### SwiftyBeaver
 * ###### Alamofire
 * ###### Kingfisher
-* ###### lottie-ios y Mocker 
+* ###### lottie-ios
+* ###### Mocker 
 
 <p align="right">(<a href="#readme-top">volver arriba</a>)</p>
 
